@@ -28,6 +28,7 @@ html {
     display: block;
     text-transform: uppercase;
     width: 100%;
+    z-index: 10;
     position: sticky;
     top: 0;
 }
@@ -165,4 +166,5 @@ nav a:hover {
     .hero h2{
         font-size: 1.2rem;
     }
+
 }
