@@ -1,0 +1,103 @@
+:root {
+    --primary-blue: #61A9CC;
+    --white: #ffffff;
+    --gray-text: #686868;
+    --tamanho-fonte: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    color: var(--gray-text);
+    font-family: 'Hedvig Letters Sans';
+}
+
+hr {
+    border: none;
+    background-color: #33333336;
+    height: 3px;
+    margin: 0 60px;
+}
+
+.sobreNos{
+    margin: 5rem;
+    font-size: 1.125rem;
+    min-height: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+
+#sobreNos{
+    flex: 1;
+}
+
+#sobreNos h4{
+    margin-top: 3.75rem;
+}
+
+#sobreNos-info{
+    flex: 2;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sobreNos-icons{
+    display: flex;
+    gap: 4.4rem;
+    max-height: 3.2rem;
+}
+
+.sobreNos-icons img {
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+}
+
+#footer-logo {
+    width: 18.8rem;
+}
+
+.sobreNos-col h4{
+    font-family: 'Hedvig Letters Serif';
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.sobreNos-col a{
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--gray-text);
+    transition: color 0.3s ease;
+}
+
+.sobreNos-col a:hover{
+    color: var(--primary-blue);
+}
+
+.sobreNos-col p{
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+#pagamento {
+    background-color: var(--primary-blue);
+    height: 2.8rem;
+    width: 22rem;
+    object-fit: cover;
+}
+
+#direitos {
+    padding: 2.8rem;
+    margin-left: 3.2rem;
+    color: #333333;
+}

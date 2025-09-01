@@ -1,0 +1,168 @@
+:root {
+    --primary-blue: #61A9CC;
+    --white: #ffffff;
+    --gray-text: #686868;
+    --tamanho-fonte: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    background-color: var(--white);
+    color: var(--gray-text);
+    font-family: 'Hedvig Letters Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#novidades, #maisVendidos, #institucional, #colecao, #newsletter, #sobreNos {
+    scroll-margin-top: 18rem; 
+}
+
+.header {
+    display: block;
+    text-transform: uppercase;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.aviso {
+    text-align: center;
+    align-content: center;
+    font-family: 'Nunito';
+    font-size: var(--tamanho-fonte);
+    color: var(--white);
+    background-color: var(--primary-blue);
+    height: 2.9rem;
+}
+
+.menu {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+
+}
+
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_logo {
+    width: 25rem;
+}
+
+.menu_icons{
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    right: 8rem;
+}
+
+.menu_icons button {
+    border: none;
+    cursor: pointer;
+}
+
+.menu_icons img {
+    width: 2.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: var(--tamanho-fonte);
+    transition: color 0.3s ease;
+    }
+
+nav a:hover {
+    color: var(--primary-blue);
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Hedvig Letters Serif';
+    text-shadow: 3px 3px #61a8cc5a;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width:992px) and (min-width: 768px) {
+    .menu_icons{
+    gap: 0.5rem;
+    position: absolute;
+    right: 3rem;
+    }
+
+    nav a{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .aviso{
+        font-size: .75rem;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+
+    nav{
+        gap: .75rem;
+    }
+    .top-bar{
+        justify-content: center;
+        margin: 1.5rem;
+    }
+    
+    .menu_icons{
+        position: static;
+    }
+
+    .menu_icons img{
+        width: 1.5rem;
+    }
+
+    #menu_logo{
+        width: 15rem;
+    }
+
+    .hero h2{
+        font-size: 1.2rem;
+    }
+}

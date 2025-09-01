@@ -1,0 +1,67 @@
+:root {
+    --primary-blue: #61A9CC;
+    --white: #ffffff;
+    --gray-text: #686868;
+    --tamanho-fonte: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    color: var(--gray-text);
+    font-family: 'Hedvig Letters Sans';
+}
+
+
+
+.institucional {
+    display: flex;
+    padding: 2.5rem 5rem;
+    gap: 3rem;
+}
+
+.institucional img {
+    width: 50%;
+}
+
+.institucional_text  {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.cta-btn {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-size: 1.5rem;
+    width: 16rem;
+    height: 3.3rem;
+    text-align: start;
+    padding: 0.6rem;
+    margin-top: 1.25rem;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color:#94c9e3;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1199px) {
+    .institucional{
+        flex-direction: column;
+    }
+
+    .institucional img{
+        width: 100%;
+    }
+
+    .institucional_text{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,101 @@
+:root {
+    --primary-blue: #61A9CC;
+    --white: #ffffff;
+    --gray-text: #686868;
+    --tamanho-fonte: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    color: var(--gray-text);
+    font-family: 'Hedvig Letters Sans';
+}
+
+.title {
+    color: var(--primary-blue);
+    font-family: 'Hedvig Letters Serif';
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.produtos{
+    margin: 5rem;
+    overflow: visible;
+}
+
+.produtos-container {
+    display: flex;
+    gap: 2.5rem;
+    margin: 2.5rem 0;
+    flex-wrap: nowrap;
+    scroll-margin-top: 7rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.produto-card {
+    cursor: pointer;
+    display: flex;
+    flex: 1 1 10rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 15px rgba (0,0,0,0.2);
+}
+
+.produto-card:hover .hide {
+    opacity: 1;
+    font-size: 0.75rem;
+    height: 2rem;
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+}
+
+.produto-card img {
+    width: 100%;
+    min-width: 16.8rem;
+    height: 18rem;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    font-size: var(--tamanho-fonte);
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+.produto-card p {
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+.produto-card button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    margin-top: auto;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.produto-card button:hover {
+    background-color: #94c9e3;
+}

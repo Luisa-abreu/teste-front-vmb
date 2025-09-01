@@ -1,0 +1,74 @@
+:root {
+    --primary-blue: #61A9CC;
+    --white: #ffffff;
+    --gray-text: #686868;
+    --tamanho-fonte: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    color: var(--gray-text);
+    font-family: 'Hedvig Letters Sans';
+}
+
+
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    height: auto;
+    margin: 4.4rem;
+}
+
+.beneficio {
+    display: flex;
+    align-content: space-between;
+}
+
+.beneficio_img {
+    height: 2.5rem;
+    margin-bottom: auto;
+    margin-right: 0.9rem;
+    align-self: center;
+}
+
+.beneficio h3{
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.beneficio p {
+    font-size: var(--tamanho-fonte);
+    font-weight: 200;
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+
+    .beneficios {
+        gap: 1rem;
+    }
+
+    .beneficio p {
+        font-size: 0.75rem;
+    }
+
+    .beneficio h3{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .beneficios {
+        display: block;
+    }
+    .beneficio p , h3 {
+        margin-bottom: 2rem;
+    }
+
+}
