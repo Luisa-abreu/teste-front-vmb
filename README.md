@@ -44,10 +44,12 @@ O objetivo foi criar uma página de e-commerce responsiva, consumindo produtos d
 
   1. Clone o repositório
        ````
-       git clone https://github.com/seu-usuario/eclipse-vambora.git
+       git clone https://github.com/Luisa-abreu/teste-front-vmb.git
        ````
 
   2. Acesse a pasta
       ````
       cd teste-front-vmb
       ````
+
+  3. Abra o arquivo index.html no navegador
